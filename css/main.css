@@ -1,0 +1,189 @@
+/**
+/* --------------------------------------------------------------- *\
+
+    MINIMAL RESET CSS 
+
+/* --------------------------------------------------------------- *\
+
+*/
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+/* --------------------------------------------------------------- *\
+
+   PROFILE CARD COMPONENT
+
+/* --------------------------------------------------------------- *\
+
+*/
+
+body {
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+}
+
+.circleBg1 {
+  background-image: url("./images/bg-pattern-top.svg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 40%;
+  right: 55%;
+  z-index: -1;
+}
+
+.circleBg2 {
+  background-image: url("./images/bg-pattern-bottom.svg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  z-index: -1;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.profile-card {
+  width: 450px;
+  height: 400px;
+  background-color: #ffffff;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 52px -13px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 0px 52px -13px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 52px -13px rgba(0, 0, 0, 0.35);
+}
+
+.wrapper-card--image {
+  background-image: url(../images/bg-pattern-card.svg);
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-border-top-left-radius: 15px;
+  -webkit-border-top-right-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+  -moz-border-radius-topright: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.wrapper-card--content {
+  width: 100%;
+  text-align: center;
+}
+
+.wrapper-card--content h3 {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.wrapper-card--content h3 span {
+  font-weight: 400;
+  color: hsl(229, 23%, 23%);
+  padding-left: 6px;
+}
+
+.wrapper-card--content p.city {
+  padding: 20px;
+  color: hsl(227, 10%, 46%);
+}
+
+.wrapper-card--header img {
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 5px solid #ffffff;
+  margin-top: -55px;
+}
+
+.wrapper-card--footer {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  border-top: 1px solid hsl(227, 10%, 76%);
+}
+
+.wrapper-card--footer h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.wrapper-card--footer small {
+  font-weight: 300;
+  color: hsl(227, 10%, 76%);
+}
+
+/**
+/* --------------------------------------------------------------- *\
+
+   FRONTEND MENTOR CREDITS - MADE BY LUCAS FRUTIG
+
+/* --------------------------------------------------------------- *\
+
+*/
+
+.attribution {
+  text-align: center;
+  color: hsl(185, 75%, 19%);
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(185, 75%, 79%);
+  transition: all 0.25s ease-in-out;
+}
+
+.attribution a:hover {
+  color: hsl(185, 75%, 99%);
+  text-decoration: underline;
+}
